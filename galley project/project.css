@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.main{
+    background-image: url('pp.jpg');
+    background-size: cover;  /* fills screen without distortion */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.btone{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255,255,0.1);
+    box-shadow: 0 0 6px rgb(255, 255, 255,0.5) ;
+    left: -360px;
+    transition: all 0.3s linear;
+}
+
+.sidebar .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 2px rgb(255, 255, 255,0.5);
+    height: 60px;
+
+
+}
+.sidebar .logo a {
+    position: absolute;
+    color: white;
+    left: 50px;
+    text-decoration: none;
+    font-size:30px;
+    font-weight: 500;
+}
+
+.sidebar .menu {
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 80px;
+}
+.sidebar .bttwo {
+    color: white;
+    font-size:40px;
+    position: absolute;
+    left: 275px;
+    line-height: 60px;
+}
+
+.sidebar .menu li {
+    margin-top: 6px;
+    padding: 13px 20px;
+
+}
+
+.sidebar .menu span,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px ;
+
+}
+
+.sidebar .menu span{
+    padding-right: 8px;
+}
+
+.sidebar .social {
+    position: absolute;
+    opacity: 0.6;
+    bottom: 50px;
+    left: 26%;
+
+}
+.sidebar .social i {
+    padding-right: 6px;
+}
+
+#check{
+    display: none;
+}
+
+
+.sidebar .menu li:hover{
+    box-shadow: 0 0 3px rgba(255,255, 255,0.6);
+}
+
+.sidebar .social i:hover {
+   opacity:1;
+   transform: scale(1.5);
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+
+#check:checked ~ .btone{
+    display: none;
+}
+
+.btone:hover{
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+.btone:hover{
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
